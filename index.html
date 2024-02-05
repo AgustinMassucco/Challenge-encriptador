@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="encriptador-style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+   <header>
+        <img src="Img/Logo@2x.png" alt="Logo de Alura" class="logo">
+   </header>
+    <main>
+        <div class="input">
+           <div class="textbox" id="texto" contenteditable="true" onclick="limpiarCaja()">Ingrese el texto aquí</div>
+        </div>
+       
+        <div class="output" id="respuesta" >
+            <img src="Img/Muñeco.png" alt="Muñeco con lupa" class="muñeco">
+            <section class="mensaje">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="advertencia">
+            <img src="Img/bi_exclamation-circle-fill.png" alt="Simbolo de advertencia" class="exclamacion"> 
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button id="encriptar" onclick="encriptar()">Encriptar</button>
+            <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    
+    </footer>      
+    <script src="encriptador.js" defer></script>
+</body>
+</html>
